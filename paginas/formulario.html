@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venta de carros Hot Wheels</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="inicio">
+      <nav class="menu">
+        <ul>
+          <li><a href="/paginas/index.html">Inicio</a></li>
+          <li class="sub-menu">
+            <a href="#">Figuras</a>
+            <ul class="sub-menu-items">
+              <li><a href="/paginas/cultura-pop.html">Cultura pop</a></li>
+              <li><a href="/paginas/anime.html">Anime</a></li>
+            </ul>
+          </li>
+          <li><a href="/paginas/nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <form action="#">
+          <section>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required />
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required />
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" required />
+
+            <label for="localidad">Localidad en Bogotá:</label>
+            <select id="localidad" required>
+              <option value="" disabled selected>
+                Selecciona una localidad
+              </option>
+              <option value="1">Usaquén</option>
+              <option value="2">Chapinero</option>
+              <option value="2">Santa Fé</option>
+              <option value="3">San Cristóbal</option>
+              <option value="5">Usme</option>
+            </select>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" required />
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required />
+            <label for="productos">Productos:</label>
+            <select id="productos" required>
+              <option value="" disabled selected>
+                Seleccione el producto que quieres
+              </option>
+              <option value="1">Carro barbie</option>
+              <option value="2">Carro exclusivo azul</option>
+              <option value="2">Carro exclusivo negro</option>
+            </select>
+
+            <button type="submit" class="btn">Enviar</button>
+          </section>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>
